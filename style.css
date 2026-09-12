@@ -133,3 +133,8 @@ footer{
     padding:20px;
     margin-top:50px;
 }
+.hero-image{
+    width: 100%;
+    max-width: 550px;
+    border-radius: 20px;
+}
