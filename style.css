@@ -186,3 +186,17 @@ footer{
     border-radius:30px;
     cursor:pointer;
 }
+/*card nampak cantik*/
+.product-card:hover{
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
+/*button cantik*/
+.product-card button:hover{
+    background:#7a6248;
+}
+/*jarak tajuk & produk*/
+.product-grid{
+    margin-top:50px;
+}
+
