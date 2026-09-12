@@ -134,7 +134,9 @@ footer{
     margin-top:50px;
 }
 .hero-image{
-    width: 100%;
-    max-width: 550px;
+    width: 75%;
+    max-width: 900px;
     border-radius: 20px;
+    display: block;
+    margin: 0 auto;
 }
