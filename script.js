@@ -21,18 +21,32 @@ function displayCart(){
 
     cartItems.innerHTML = "";
 
-    cart.forEach(item => {
+    cart.forEach((item,index) => {
 
-        total += item.price;
+    total += item.price;
 
-        cartItems.innerHTML += `
-            <div class="cart-item">
-                <h3>${item.name}</h3>
-                <p>RM${item.price.toFixed(2)}</p>
-            </div>
-        `;
-    });
+    cartItems.innerHTML += `
+        <div class="cart-item">
+            <h3>${item.name}</h3>
+            <p>RM${item.price.toFixed(2)}</p>
+
+            <button onclick="removeItem(${index})">
+                Buang
+            </button>
+        </div>
+    `;
+});
 
     document.getElementById("total").innerHTML =
     "Total: RM" + total.toFixed(2);
+}
+function removeItem(index){
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart.splice(index,1);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    displayCart();
 }
