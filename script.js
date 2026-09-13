@@ -103,3 +103,22 @@ function decreaseQty(index){
 
     displayCart();
 }
+
+function updateCartCount(){
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let totalItems = 0;
+
+    cart.forEach(item => {
+
+        totalItems += item.quantity || 1;
+
+    });
+
+    let countElement = document.getElementById("cart-count");
+
+    if(countElement){
+        countElement.innerText = totalItems;
+    }
+}
