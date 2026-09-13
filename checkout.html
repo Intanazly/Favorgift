@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Favor Gift</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<nav>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">🛒</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="checkout-page">
+
+    <h1>Checkout</h1>
+    <p>Sila lengkapkan maklumat tempahan anda.</p>
+
+    <form id="orderForm">
+
+        <label>Nama Penuh</label>
+        <input type="text" id="nama" required>
+
+        <label>No Telefon</label>
+        <input type="tel" id="telefon" required>
+
+        <label>Email</label>
+        <input type="email" id="email">
+
+        <label>Tarikh Majlis</label>
+        <input type="date" id="tarikh" required>
+
+        <label>Jenis Majlis</label>
+        <select id="majlis">
+            <option>Perkahwinan</option>
+            <option>Hari Jadi</option>
+            <option>Korporat</option>
+        </select>
+
+        <label>Alamat Penghantaran / Lokasi Ambil</label>
+        <textarea id="alamat" rows="4"></textarea>
+
+        <label>Catatan Tambahan</label>
+        <textarea id="catatan" rows="4"></textarea>
+
+        <button type="submit" class="submit-btn">
+            Hantar Tempahan
+        </button>
+
+    </form>
+
+</section>
+
+<script>
+document.getElementById("orderForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    alert("Tempahan berjaya dihantar!");
+
+    window.location.href = "index.html";
+
+});
+</script>
+
+</body>
+</html>
