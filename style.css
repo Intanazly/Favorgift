@@ -207,3 +207,8 @@ footer{
     border-radius:8px;
     border:1px solid #ccc;
 }
+/*cantikkan page produk */
+.product-card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
