@@ -135,3 +135,25 @@ window.onload = function(){
     }
 
 }
+
+
+function saveStock(){
+
+    let stock = {
+
+        sabun: document.getElementById("sabun").value,
+
+        madu: document.getElementById("madu").value,
+
+        lilin: document.getElementById("lilin").value,
+
+        pen: document.getElementById("pen").value,
+
+        cawan: document.getElementById("cawan").value
+
+    };
+
+    localStorage.setItem("stock", JSON.stringify(stock));
+
+    alert("Stok berjaya disimpan!");
+}
