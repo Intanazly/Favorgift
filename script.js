@@ -157,3 +157,18 @@ function saveStock(){
 
     alert("Stok berjaya disimpan!");
 }
+
+
+function loadStock(){
+
+    let stock = JSON.parse(localStorage.getItem("stock"));
+
+    if(!stock) return;
+
+    let sabunStock = document.getElementById("stock-sabun");
+
+    if(sabunStock){
+        sabunStock.innerText = "Stok: " + stock.sabun;
+    }
+
+}
