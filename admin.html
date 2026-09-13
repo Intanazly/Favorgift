@@ -1,58 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Admin Stock</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Stock</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
-    <div class="logo">
-        <img src="images/logo.png" alt="Logo">
-    </div>
-
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
-        <li><a href="cart.html">🛒 <span id="cart-count">0</span></a></li>
+        <li><a href="cart.html">Cart</a></li>
         <li><a href="admin.html">Admin</a></li>
     </ul>
 </nav>
 
-<section class="admin-page">
+<div class="admin-page">
 
-    <h1>Admin Stock Management</h1>
+<h1>Admin Stock Management</h1>
 
-    <div class="stock-item">
-        <label>Sabun Tangan</label>
-        <input type="number" id="sabun" value="99">
-    </div>
+<h2>💍 Wedding Collection</h2>
 
-    <div class="stock-item">
-        <label>Madu</label>
-        <input type="number" id="madu" value="15">
-    </div>
+<label>Sabun Tangan</label>
+<input type="number" id="sabun" value="20">
 
-    <div class="stock-item">
-        <label>Lilin</label>
-        <input type="number" id="lilin" value="10">
-    </div>
+<label>Madu</label>
+<input type="number" id="madu" value="20">
 
-    <div class="stock-item">
-        <label>Pen</label>
-        <input type="number" id="pen" value="30">
-    </div>
+<label>Lilin</label>
+<input type="number" id="lilin" value="20">
 
-    <div class="stock-item">
-        <label>Cawan</label>
-        <input type="number" id="cawan" value="25">
-    </div>
+<label>Tuala Kecil</label>
+<input type="number" id="tuala" value="20">
 
-    <button onclick="saveStock()" class="checkout-btn">
-        Simpan Stok
-    </button>
+<label>Coklat Strawberi</label>
+<input type="number" id="coklat" value="20">
 
-</section>
+<label>Set Cawan</label>
+<input type="number" id="setcawan" value="20">
+
+<label>Kipas Mini</label>
+<input type="number" id="kipas" value="20">
+
+<label>Set Sudu & Garfu</label>
+<input type="number" id="sudu" value="20">
+
+<label>Tisu</label>
+<input type="number" id="tisu" value="20">
+
+<label>Sejadah Mini</label>
+<input type="number" id="sejadah" value="20">
+
+<h2>🎂 Birthday Collection</h2>
+
+<label>Gula Gula</label>
+<input type="number" id="gulagula" value="20">
+
+<label>Popcorn</label>
+<input type="number" id="popcorn" value="20">
+
+<label>Biskut Coklat Chip</label>
+<input type="number" id="biskut" value="20">
+
+<label>Mini Makaron</label>
+<input type="number" id="makaron" value="20">
+
+<label>Gula Gula Kapas</label>
+<input type="number" id="kapas" value="20">
+
+<label>Kek Cawan</label>
+<input type="number" id="kek" value="20">
+
+<label>Minyak Wangi Kereta</label>
+<input type="number" id="minyak" value="20">
+
+<label>Hand Sanitizer</label>
+<input type="number" id="sanitizer" value="20">
+
+<label>Bubble Wand</label>
+<input type="number" id="bubble" value="20">
+
+<label>Penyepit Kuku</label>
+<input type="number" id="kuku" value="20">
+
+<h2>🏢 Corporate Collection</h2>
+
+<label>Pen</label>
+<input type="number" id="pen" value="20">
+
+<label>Cawan</label>
+<input type="number" id="cawan" value="20">
+
+<label>Buku Nota</label>
+<input type="number" id="bukunota" value="20">
+
+<label>Termos</label>
+<input type="number" id="termos" value="20">
+
+<label>Kalender</label>
+<input type="number" id="kalender" value="20">
+
+<label>Fail</label>
+<input type="number" id="fail" value="20">
+
+<label>Bekas Pensil</label>
+<input type="number" id="bekaspensil" value="20">
+
+<label>Nota Pelekat Buku</label>
+<input type="number" id="notapelekat" value="20">
+
+<label>Lanyard</label>
+<input type="number" id="lanyard" value="20">
+
+<label>Kotak Bekal</label>
+<input type="number" id="kotakbekal" value="20">
+
+<br><br>
+
+<button onclick="saveStock()" class="checkout-btn">
+    Simpan Stok
+</button>
+
+</div>
 
 <script src="script.js"></script>
 
