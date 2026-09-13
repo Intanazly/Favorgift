@@ -310,3 +310,12 @@ footer{
     font-size:16px;
     cursor:pointer;
 }
+.cart-item button{
+    background:#d9534f;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:10px;
+}
