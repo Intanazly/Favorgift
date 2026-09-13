@@ -377,3 +377,40 @@ footer{
     width:100px;
     padding:5px;
 }
+.admin-container{
+    max-width:900px;
+    margin:auto;
+    padding:40px;
+}
+
+.stock-group{
+    margin-bottom:30px;
+}
+
+.stock-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:10px 0;
+}
+
+.stock-item label{
+    width:200px;
+    font-weight:bold;
+}
+
+.stock-item input{
+    width:120px;
+    padding:8px;
+}
+
+.save-btn{
+    display:block;
+    margin:30px auto;
+    padding:12px 30px;
+    background:#A88B63;
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
