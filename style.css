@@ -199,4 +199,11 @@ footer{
 .product-grid{
     margin-top:50px;
 }
-
+/*buat piihan*/
+.product-card select{
+    width:100%;
+    padding:8px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
