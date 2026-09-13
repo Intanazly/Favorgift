@@ -14,28 +14,21 @@ body{
 nav{
     background:#A8BBA3;
     padding:20px 60px;
-    display:flex;
-    justify-content:flex-end;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:bold;
-    color:white;
 }
 
 nav ul{
     display:flex;
+    justify-content:flex-end;
     list-style:none;
     gap:25px;
-    margin-left:auto;
 }
 
-ul li a{
+nav ul li a{
     text-decoration:none;
     color:white;
     font-weight:bold;
 }
+
 
 /* Hero */
 .hero{
