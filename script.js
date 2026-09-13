@@ -143,15 +143,41 @@ function saveStock(){
 
     let stock = {
 
+        // Wedding
         sabun: document.getElementById("sabun").value,
-
         madu: document.getElementById("madu").value,
-
         lilin: document.getElementById("lilin").value,
+        tuala: document.getElementById("tuala").value,
+        coklat: document.getElementById("coklat").value,
+        setcawan: document.getElementById("setcawan").value,
+        kipas: document.getElementById("kipas").value,
+        sudu: document.getElementById("sudu").value,
+        tisu: document.getElementById("tisu").value,
+        sejadah: document.getElementById("sejadah").value,
 
+        // Birthday
+        gulagula: document.getElementById("gulagula").value,
+        popcorn: document.getElementById("popcorn").value,
+        biskut: document.getElementById("biskut").value,
+        makaron: document.getElementById("makaron").value,
+        kapas: document.getElementById("kapas").value,
+        kek: document.getElementById("kek").value,
+        minyak: document.getElementById("minyak").value,
+        sanitizer: document.getElementById("sanitizer").value,
+        bubble: document.getElementById("bubble").value,
+        kuku: document.getElementById("kuku").value,
+
+        // Corporate
         pen: document.getElementById("pen").value,
-
-        cawan: document.getElementById("cawan").value
+        cawan: document.getElementById("cawan").value,
+        bukunota: document.getElementById("bukunota").value,
+        termos: document.getElementById("termos").value,
+        kalender: document.getElementById("kalender").value,
+        fail: document.getElementById("fail").value,
+        bekaspensil: document.getElementById("bekaspensil").value,
+        notapelekat: document.getElementById("notapelekat").value,
+        lanyard: document.getElementById("lanyard").value,
+        kotakbekal: document.getElementById("kotakbekal").value
 
     };
 
@@ -159,7 +185,6 @@ function saveStock(){
 
     alert("Stok berjaya disimpan!");
 }
-
 
 function loadStock(){
 
