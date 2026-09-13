@@ -192,10 +192,100 @@ function loadStock(){
 
     if(!stock) return;
 
-    let sabunStock = document.getElementById("stock-sabun");
+    // Wedding
+    if(document.getElementById("stock-sabun"))
+        document.getElementById("stock-sabun").innerText = "Stok: " + stock.sabun;
 
-    if(sabunStock){
-        sabunStock.innerText = "Stok: " + stock.sabun;
-    }
+    if(document.getElementById("stock-madu"))
+        document.getElementById("stock-madu").innerText = "Stok: " + stock.madu;
+
+    if(document.getElementById("stock-lilin"))
+        document.getElementById("stock-lilin").innerText = "Stok: " + stock.lilin;
+
+    if(document.getElementById("stock-tuala"))
+        document.getElementById("stock-tuala").innerText = "Stok: " + stock.tuala;
+
+    if(document.getElementById("stock-coklat"))
+        document.getElementById("stock-coklat").innerText = "Stok: " + stock.coklat;
+
+    if(document.getElementById("stock-setcawan"))
+        document.getElementById("stock-setcawan").innerText = "Stok: " + stock.setcawan;
+
+    if(document.getElementById("stock-kipas"))
+        document.getElementById("stock-kipas").innerText = "Stok: " + stock.kipas;
+
+    if(document.getElementById("stock-sudu"))
+        document.getElementById("stock-sudu").innerText = "Stok: " + stock.sudu;
+
+    if(document.getElementById("stock-tisu"))
+        document.getElementById("stock-tisu").innerText = "Stok: " + stock.tisu;
+
+    if(document.getElementById("stock-sejadah"))
+        document.getElementById("stock-sejadah").innerText = "Stok: " + stock.sejadah;
+
+
+    // Birthday
+    if(document.getElementById("stock-gulagula"))
+        document.getElementById("stock-gulagula").innerText = "Stok: " + stock.gulagula;
+
+    if(document.getElementById("stock-popcorn"))
+        document.getElementById("stock-popcorn").innerText = "Stok: " + stock.popcorn;
+
+    if(document.getElementById("stock-biskut"))
+        document.getElementById("stock-biskut").innerText = "Stok: " + stock.biskut;
+
+    if(document.getElementById("stock-makaron"))
+        document.getElementById("stock-makaron").innerText = "Stok: " + stock.makaron;
+
+    if(document.getElementById("stock-kapas"))
+        document.getElementById("stock-kapas").innerText = "Stok: " + stock.kapas;
+
+    if(document.getElementById("stock-kek"))
+        document.getElementById("stock-kek").innerText = "Stok: " + stock.kek;
+
+    if(document.getElementById("stock-minyak"))
+        document.getElementById("stock-minyak").innerText = "Stok: " + stock.minyak;
+
+    if(document.getElementById("stock-sanitizer"))
+        document.getElementById("stock-sanitizer").innerText = "Stok: " + stock.sanitizer;
+
+    if(document.getElementById("stock-bubble"))
+        document.getElementById("stock-bubble").innerText = "Stok: " + stock.bubble;
+
+    if(document.getElementById("stock-kuku"))
+        document.getElementById("stock-kuku").innerText = "Stok: " + stock.kuku;
+
+
+    // Corporate
+    if(document.getElementById("stock-pen"))
+        document.getElementById("stock-pen").innerText = "Stok: " + stock.pen;
+
+    if(document.getElementById("stock-cawan"))
+        document.getElementById("stock-cawan").innerText = "Stok: " + stock.cawan;
+
+    if(document.getElementById("stock-bukunota"))
+        document.getElementById("stock-bukunota").innerText = "Stok: " + stock.bukunota;
+
+    if(document.getElementById("stock-termos"))
+        document.getElementById("stock-termos").innerText = "Stok: " + stock.termos;
+
+    if(document.getElementById("stock-kalender"))
+        document.getElementById("stock-kalender").innerText = "Stok: " + stock.kalender;
+
+    if(document.getElementById("stock-fail"))
+        document.getElementById("stock-fail").innerText = "Stok: " + stock.fail;
+
+    if(document.getElementById("stock-bekaspensil"))
+        document.getElementById("stock-bekaspensil").innerText = "Stok: " + stock.bekaspensil;
+
+    if(document.getElementById("stock-notapelekat"))
+        document.getElementById("stock-notapelekat").innerText = "Stok: " + stock.notapelekat;
+
+    if(document.getElementById("stock-lanyard"))
+        document.getElementById("stock-lanyard").innerText = "Stok: " + stock.lanyard;
+
+    if(document.getElementById("stock-kotakbekal"))
+        document.getElementById("stock-kotakbekal").innerText = "Stok: " + stock.kotakbekal;
+
 
 }
