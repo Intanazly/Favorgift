@@ -124,3 +124,13 @@ function updateCartCount(){
         countElement.innerText = totalItems;
     }
 }
+
+window.onload = function(){
+
+    updateCartCount();
+
+    if(document.getElementById("cart-items")){
+        displayCart();
+    }
+
+}
