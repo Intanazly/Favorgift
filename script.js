@@ -28,7 +28,7 @@ function displayCart(){
         cartItems.innerHTML += `
             <div class="cart-item">
                 <h3>${item.name}</h3>
-                <p>RM${item.price}</p>
+                <p>RM${item.price.toFixed(2)}</p>
             </div>
         `;
     });
