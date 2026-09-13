@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Stock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<nav>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">🛒 <span id="cart-count">0</span></a></li>
+        <li><a href="admin.html">Admin</a></li>
+    </ul>
+</nav>
+
+<section class="admin-page">
+
+    <h1>Admin Stock Management</h1>
+
+    <div class="stock-item">
+        <label>Sabun Tangan</label>
+        <input type="number" id="sabun" value="20">
+    </div>
+
+    <div class="stock-item">
+        <label>Madu</label>
+        <input type="number" id="madu" value="15">
+    </div>
+
+    <div class="stock-item">
+        <label>Lilin</label>
+        <input type="number" id="lilin" value="10">
+    </div>
+
+    <div class="stock-item">
+        <label>Pen</label>
+        <input type="number" id="pen" value="30">
+    </div>
+
+    <div class="stock-item">
+        <label>Cawan</label>
+        <input type="number" id="cawan" value="25">
+    </div>
+
+    <button onclick="saveStock()" class="checkout-btn">
+        Simpan Stok
+    </button>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
