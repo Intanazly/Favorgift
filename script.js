@@ -36,3 +36,28 @@ function displayCart(){
     document.getElementById("total").innerHTML =
     "Total: RM" + total.toFixed(2);
 }
+function displayCart(){
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    let cartItems = document.getElementById("cart-items");
+
+    let total = 0;
+
+    cartItems.innerHTML = "";
+
+    cart.forEach(item => {
+
+        total += item.price;
+
+        cartItems.innerHTML += `
+            <div class="cart-item">
+                <h3>${item.name}</h3>
+                <p>RM${item.price}</p>
+            </div>
+        `;
+    });
+
+    document.getElementById("total").innerHTML =
+    "Total: RM" + total.toFixed(2);
+}
