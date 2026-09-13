@@ -17,6 +17,8 @@ function addToCart(name, price){
         });
     }
 
+    updateCartCount();
+    
     localStorage.setItem("cart", JSON.stringify(cart));
 
     alert(name + " berjaya ditambah ke troli!");
