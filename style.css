@@ -224,3 +224,19 @@ footer{
 .product-card:hover{
     transform:translateY(-5px);
 }
+.cart-page{
+    padding:50px;
+}
+
+.cart-item{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+#total{
+    margin-top:20px;
+    color:#6d5a47;
+}
