@@ -130,6 +130,8 @@ window.onload = function(){
 
     updateCartCount();
 
+    loadStock();
+
     if(document.getElementById("cart-items")){
         displayCart();
     }
