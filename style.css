@@ -28,7 +28,7 @@ nav ul{
     display:flex;
     list-style:none;
     gap:25px;
-    margin:0;
+    margin-left:auto;
 }
 
 ul li a{
