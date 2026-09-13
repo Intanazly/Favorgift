@@ -414,3 +414,48 @@ footer{
     border-radius:30px;
     cursor:pointer;
 }
+/*admin*/
+
+.admin-container{
+    max-width:800px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+}
+
+.stock-group{
+    margin-bottom:30px;
+}
+
+.stock-group h2{
+    margin-bottom:15px;
+}
+
+.stock-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.stock-item label{
+    font-weight:bold;
+}
+
+.stock-item input{
+    width:100px;
+    padding:8px;
+}
+
+.save-btn{
+    display:block;
+    margin:30px auto;
+    padding:12px 30px;
+    background:#A88B63;
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+}
