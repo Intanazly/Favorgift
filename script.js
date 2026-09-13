@@ -2,10 +2,20 @@ function addToCart(name, price){
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    cart.push({
-        name: name,
-        price: price
-    });
+    let existingItem = cart.find(item => item.name === name);
+
+    if(existingItem){
+
+        existingItem.quantity += 1;
+
+    }else{
+
+        cart.push({
+            name:name,
+            price:price,
+            quantity:1
+        });
+    }
 
     localStorage.setItem("cart", JSON.stringify(cart));
 
@@ -23,17 +33,35 @@ function displayCart(){
 
     cart.forEach((item,index) => {
 
-    total += item.price;
+    total += item.price * item.quantity;
 
     cartItems.innerHTML += `
-        <div class="cart-item">
-            <h3>${item.name}</h3>
-            <p>RM${item.price.toFixed(2)}</p>
+       <div class="cart-item">
 
-            <button onclick="removeItem(${index})">
-                Buang
-            </button>
-        </div>
+    <h3>${item.name}</h3>
+
+    <p>RM${item.price.toFixed(2)}</p>
+
+    <div class="qty-box">
+
+        <button onclick="decreaseQty(${index})">-</button>
+
+        <span>${item.quantity}</span>
+
+        <button onclick="increaseQty(${index})">+</button>
+
+    </div>
+
+    <p>
+        Subtotal:
+        RM${(item.price * item.quantity).toFixed(2)}
+    </p>
+
+    <button onclick="removeItem(${index})">
+        Buang
+    </button>
+
+</div>
     `;
 });
 
@@ -45,6 +73,31 @@ function removeItem(index){
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     cart.splice(index,1);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    displayCart();
+}
+function increaseQty(index){
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    cart[index].quantity++;
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    displayCart();
+}
+
+function decreaseQty(index){
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    if(cart[index].quantity > 1){
+
+        cart[index].quantity--;
+
+    }
 
     localStorage.setItem("cart", JSON.stringify(cart));
 
