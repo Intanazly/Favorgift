@@ -156,7 +156,7 @@ function saveStock(){
         sejadah: document.getElementById("sejadah").value,
 
         // Birthday
-        gulagula: document.getElementById("gulagula").value,
+        gula: document.getElementById("gula").value,
         popcorn: document.getElementById("popcorn").value,
         biskut: document.getElementById("biskut").value,
         makaron: document.getElementById("makaron").value,
@@ -170,14 +170,14 @@ function saveStock(){
         // Corporate
         pen: document.getElementById("pen").value,
         cawan: document.getElementById("cawan").value,
-        bukunota: document.getElementById("bukunota").value,
+        nota: document.getElementById("nota").value,
         termos: document.getElementById("termos").value,
         kalender: document.getElementById("kalender").value,
         fail: document.getElementById("fail").value,
-        bekaspensil: document.getElementById("bekaspensil").value,
-        notapelekat: document.getElementById("notapelekat").value,
+        pensil: document.getElementById("pensil").value,
+        pelekat: document.getElementById("pelekat").value,
         lanyard: document.getElementById("lanyard").value,
-        kotakbekal: document.getElementById("kotakbekal").value
+        bekal: document.getElementById("bekal").value
 
     };
 
@@ -224,28 +224,6 @@ function loadStock(){
         document.getElementById("stock-sejadah").innerText = "Stok: " + stock.sejadah;
 
 
-    // Birthday
-gula: document.getElementById("gula").value,
-popcorn: document.getElementById("popcorn").value,
-biskut: document.getElementById("biskut").value,
-makaron: document.getElementById("makaron").value,
-kapas: document.getElementById("kapas").value,
-kek: document.getElementById("kek").value,
-minyak: document.getElementById("minyak").value,
-sanitizer: document.getElementById("sanitizer").value,
-bubble: document.getElementById("bubble").value,
-kuku: document.getElementById("kuku").value,
 
-// Corporate
-pen: document.getElementById("pen").value,
-cawan: document.getElementById("cawan").value,
-nota: document.getElementById("nota").value,
-termos: document.getElementById("termos").value,
-kalender: document.getElementById("kalender").value,
-fail: document.getElementById("fail").value,
-pensil: document.getElementById("pensil").value,
-pelekat: document.getElementById("pelekat").value,
-lanyard: document.getElementById("lanyard").value,
-bekal: document.getElementById("bekal").value,
 
 }
