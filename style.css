@@ -336,3 +336,26 @@ footer{
     cursor:pointer;
     font-size:18px;
 }
+/*Untuk tambah stock*/
+.admin-page{
+    max-width:700px;
+    margin:50px auto;
+    padding:30px;
+}
+
+.stock-item{
+    margin-bottom:15px;
+}
+
+.stock-item label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+.stock-item input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
