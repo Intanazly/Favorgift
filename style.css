@@ -505,3 +505,99 @@ nav img{
 .contact-form button:hover{
     background:#7a6248;
 }
+
+/* ABOUT US */
+
+.about-banner{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.about-banner h1{
+    font-size:50px;
+    color:#6B5B4D;
+}
+
+.about-banner p{
+    margin-top:15px;
+    font-size:18px;
+}
+
+.about-content{
+    max-width:1200px;
+    margin:auto;
+    padding:50px;
+    display:flex;
+    gap:50px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text h2{
+    color:#6B5B4D;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.about-text p,
+.about-text li{
+    line-height:1.8;
+}
+
+.about-text ul{
+    padding-left:20px;
+}
+
+.about-project{
+    max-width:900px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.why-choose-us{
+    padding:80px 50px;
+    text-align:center;
+}
+
+.why-choose-us h2{
+    color:#6B5B4D;
+    margin-bottom:40px;
+}
+
+.choose-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    max-width:900px;
+    margin:auto;
+}
+
+.choose-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.choose-card:hover{
+    transform:translateY(-5px);
+}
