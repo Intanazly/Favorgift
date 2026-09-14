@@ -175,8 +175,8 @@ footer{
 }
 
 .product-card img{
-    width:80%;
-    height:150px;
+    width:100%;
+    height:220px;
     object-fit:cover;
     border-radius:15px;
 }
