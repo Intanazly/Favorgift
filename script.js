@@ -25,13 +25,7 @@ function addToCart(name, price, image){
     alert(name + " berjaya ditambah ke troli!");
 }
 
-    
-    localStorage.setItem("cart", JSON.stringify(cart));
-
-     updateCartCount();
-
-    alert(name + " berjaya ditambah ke troli!");
-}
+   
 function displayCart(){
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
