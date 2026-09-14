@@ -463,3 +463,41 @@ nav img{
     height:80px;
     width:auto;
 }
+/* Contact Page */
+
+.contact-page{
+    max-width:800px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.contact-page h1{
+    color:#6B5B4D;
+    margin-bottom:10px;
+}
+
+.contact-box{
+    margin:25px 0;
+    line-height:2;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.contact-form button{
+    background:#8B7355;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+}
