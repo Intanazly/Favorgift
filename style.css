@@ -118,12 +118,22 @@ nav ul li a{
 }
 
 /* Footer */
+html, body{
+    height:100%;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
 footer{
+    margin-top:auto;
     background:#A8BBA3;
     color:white;
     text-align:center;
     padding:20px;
-    margin-top:50px;
 }
 .hero-image{
     width: 75%;
