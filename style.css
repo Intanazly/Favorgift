@@ -469,19 +469,9 @@ nav img{
     max-width:800px;
     margin:50px auto;
     background:white;
-    padding:30px;
-    border-radius:15px;
-    text-align:center;
-}
-
-.contact-page h1{
-    color:#6B5B4D;
-    margin-bottom:10px;
-}
-
-.contact-box{
-    margin:25px 0;
-    line-height:2;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
 .contact-form input,
@@ -489,8 +479,8 @@ nav img{
     width:100%;
     padding:12px;
     margin-bottom:15px;
-    border:1px solid #ccc;
-    border-radius:8px;
+    border:1px solid #ddd;
+    border-radius:10px;
 }
 
 .contact-form button{
@@ -500,4 +490,8 @@ nav img{
     padding:12px 25px;
     border-radius:30px;
     cursor:pointer;
+}
+
+.contact-form button:hover{
+    background:#7a6248;
 }
