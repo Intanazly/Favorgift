@@ -452,16 +452,14 @@ footer{
     font-size:16px;
 }
 
-/*navbar*/
-
-nav img{
-    height:70px;
-    width:auto;
-}
-
+/* Logo Navbar */
 nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 50px;
+}
+
+nav img{
+    height:80px;
+    width:auto;
 }
