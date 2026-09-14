@@ -140,11 +140,13 @@ footer{
     padding:20px;
 }
 .hero-image{
-    width: 75%;
-    max-width: 900px;
-    border-radius: 20px;
-    display: block;
-    margin: 0 auto;
+    width:70%;
+    max-width:750px;
+    height:320px;
+    object-fit:cover;
+    display:block;
+    margin:15px auto;
+    border-radius:20px;
 }
 /*products*/
 .product-page{
