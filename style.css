@@ -55,6 +55,10 @@ nav ul li a{
     padding:15px 35px;
     border-radius:30px;
     cursor:pointer;
+
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 /* Categories */
