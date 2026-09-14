@@ -172,6 +172,8 @@ footer{
     padding:20px;
     border-radius:20px;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    display:flex;
+    flex-direction:column;
 }
 
 .product-card img{
@@ -193,6 +195,7 @@ footer{
     border:none;
     border-radius:30px;
     cursor:pointer;
+    margin-top:auto;
 }
 /*card nampak cantik*/
 .product-card:hover{
