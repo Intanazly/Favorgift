@@ -262,8 +262,8 @@ if(document.getElementById("stock-pen"))
 if(document.getElementById("stock-cawan"))
     document.getElementById("stock-cawan").innerText = "Stok: " + stock.cawan;
 
-if(document.getElementById("stock-nota"))
-    document.getElementById("stock-nota").innerText = "Stok: " + stock.nota;
+if(document.getElementById("stock-bukunota"))
+    document.getElementById("stock-bukunota").innerText = "Stok: " + stock.nota;
 
 if(document.getElementById("stock-termos"))
     document.getElementById("stock-termos").innerText = "Stok: " + stock.termos;
@@ -274,18 +274,17 @@ if(document.getElementById("stock-kalender"))
 if(document.getElementById("stock-fail"))
     document.getElementById("stock-fail").innerText = "Stok: " + stock.fail;
 
-if(document.getElementById("stock-pensil"))
-    document.getElementById("stock-pensil").innerText = "Stok: " + stock.pensil;
+if(document.getElementById("stock-bekaspensil"))
+    document.getElementById("stock-bekaspensil").innerText = "Stok: " + stock.pensil;
 
-if(document.getElementById("stock-pelekat"))
-    document.getElementById("stock-pelekat").innerText = "Stok: " + stock.pelekat;
+if(document.getElementById("stock-notapelekat"))
+    document.getElementById("stock-notapelekat").innerText = "Stok: " + stock.pelekat;
 
 if(document.getElementById("stock-lanyard"))
     document.getElementById("stock-lanyard").innerText = "Stok: " + stock.lanyard;
 
-if(document.getElementById("stock-bekal"))
-    document.getElementById("stock-bekal").innerText = "Stok: " + stock.bekal;
-
+if(document.getElementById("stock-kotakbekal"))
+    document.getElementById("stock-kotakbekal").innerText = "Stok: " + stock.bekal;
 
 
 
