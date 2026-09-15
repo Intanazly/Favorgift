@@ -43,6 +43,8 @@ function displayCart(){
     cartItems.innerHTML += `
        <div class="cart-item">
 
+        <img src="${item.image}" class="cart-image">
+    
     <h3>${item.name}</h3>
 
     <p>RM${item.price.toFixed(2)}</p>
