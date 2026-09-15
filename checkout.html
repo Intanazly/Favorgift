@@ -82,28 +82,29 @@ document.getElementById("orderForm").addEventListener("submit", function(e){
         tarikhTempahan: document.getElementById("bookingDate").value
     };
 
-    fetch("https://script.google.com/macros/s/AKfycby0E7MqPgwm2PlhGbOaUudV7YjMNH0Ruh0zgGU8vO2n_OzbPYpcvVng-_BM04A-s40xlQ/exec", {
-        method: "POST",
-        body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(result => {
+   fetch("https://script.google.com/macros/s/AKfycby0E7MqPgwm2PlhGbOaUudV7YjMNH0Ruh0zgGU8vO2n_OzbPYpcvVng-_BM04A-s40xlQ/exec", {
+    method: "POST",
+    mode: "no-cors",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+})
+.then(() => {
 
-        alert("Tempahan berjaya dihantar!");
+    alert("Tempahan berjaya dihantar!");
 
-        localStorage.removeItem("cart");
+    localStorage.removeItem("cart");
 
-        window.location.href = "index.html";
+    window.location.href = "index.html";
 
-    })
-    .catch(error => {
+})
+.catch(error => {
 
-        alert("Ralat menghantar tempahan");
+    alert("Ralat menghantar tempahan");
+    console.log(error);
 
-        console.log(error);
-
-    });
-
+});
 });
 </script>
 </body>
