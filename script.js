@@ -8,7 +8,7 @@ function addToCart(name, price, image){
 
         existingItem.quantity += 1;
 
-    }else{
+    } else {
 
   cart.push({
         name:name,
@@ -25,8 +25,7 @@ function addToCart(name, price, image){
     alert(name + " berjaya ditambah ke troli!");
 }
 
-   
-function displayCart(){
+  function displayCart(){
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -38,54 +37,46 @@ function displayCart(){
 
     cart.forEach((item,index) => {
 
-    total += item.price * item.quantity;
+        total += item.price * item.quantity;
 
-    cartItems.innerHTML += `
-       <div class="cart-item">
+        cartItems.innerHTML += `
+        <div class="cart-item">
 
-        <img src="${item.image}" class="cart-image">
-    
-    <h3>${item.name}</h3>
+            <img src="${item.image}" class="cart-image">
 
-    cartItems.innerHTML += `
-    <div class="cart-item">
+            <h3>${item.name}</h3>
 
-    <img src="${item.image}" class="cart-image">
+            <p>Warna: ${item.warna || "-"}</p>
+            <p>Aroma: ${item.aroma || "-"}</p>
+            <p>Perisa: ${item.perisa || "-"}</p>
 
-    <h3>${item.name}</h3>
+            <p>RM${item.price.toFixed(2)}</p>
 
-    <p>Warna: ${item.warna || "-"}</p>
-    <p>Aroma: ${item.aroma || "-"}</p>
-    <p>Perisa: ${item.perisa || "-"}</p>
+            <div class="qty-box">
+                <button onclick="decreaseQty(${index})">-</button>
 
-    <p>RM${item.price.toFixed(2)}</p>
+                <span>${item.quantity}</span>
 
-    <div class="qty-box">
+                <button onclick="increaseQty(${index})">+</button>
+            </div>
 
-        <button onclick="decreaseQty(${index})">-</button>
+            <p>
+                Subtotal:
+                RM${(item.price * item.quantity).toFixed(2)}
+            </p>
 
-        <span>${item.quantity}</span>
+            <button onclick="removeItem(${index})">
+                Buang
+            </button>
 
-        <button onclick="increaseQty(${index})">+</button>
-
-    </div>
-
-    <p>
-        Subtotal:
-        RM${(item.price * item.quantity).toFixed(2)}
-    </p>
-
-    <button onclick="removeItem(${index})">
-        Buang
-    </button>
-
-</div>
-    `;
-});
+        </div>
+        `;
+    });
 
     document.getElementById("total").innerHTML =
     "Total: RM" + total.toFixed(2);
-}
+} 
+
 function removeItem(index){
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
