@@ -80,9 +80,7 @@ document.getElementById("orderForm").addEventListener("submit", function(e){
     produk: cart.map(item => item.name).join(", "),
     kuantiti: cart.map(item => item.quantity).join(", "),
 
-    warna: cart.map(item => item.warna || "-").join(", "),
-    aroma: cart.map(item => item.aroma || "-").join(", "),
-    perisa: cart.map(item => item.perisa || "-").join(", "),
+    pilihan: cart.map(item => item.pilihan).join(", "),
 
     tarikhTempahan: document.getElementById("bookingDate").value,
     tarikhMajlis: document.getElementById("tarikh").value
