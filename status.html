@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Semak Status Tempahan</title>
 
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f8f5f1;
+    text-align:center;
+    padding:40px;
+}
+
+.container{
+    max-width:500px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input{
+    width:90%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    background:#8b5e3c;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+#result{
+    margin-top:20px;
+    text-align:left;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Semak Status Tempahan</h2>
+
+<input
+type="text"
+id="phone"
+placeholder="Masukkan No Telefon">
+
+<br>
+
+<button onclick="semakStatus()">
+Semak Status
+</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+function semakStatus(){
+
+let phone =
+document.getElementById("phone").value;
+
+fetch(
+"https://script.google.com/macros/s/PASTE_URL_KAU_DI_SINI/exec?phone="
++ phone
+)
+
+.then(response => response.json())
+
+.then(data => {
+
+if(data.status == "Tiada Tempahan Dijumpai"){
+
+document.getElementById("result").innerHTML =
+"<p>❌ Tiada Tempahan Dijumpai</p>";
+
+return;
+}
+
+document.getElementById("result").innerHTML = `
+
+<p><b>Nama:</b> ${data.nama}</p>
+
+<p><b>Produk:</b> ${data.produk}</p>
+
+<p><b>Kuantiti:</b> ${data.kuantiti}</p>
+
+<p><b>Tarikh Tempahan:</b> ${data.tarikh}</p>
+
+<p><b>Status:</b> ${data.status}</p>
+
+`;
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
