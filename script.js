@@ -14,7 +14,7 @@ function addToCart(name, price, image){
             name:name,
             price:price,
             image:image,
-            quantity:1
+            quantity:1,
         warna: document.getElementById("warna").value,
         aroma: document.getElementById("aroma").value,
         perisa: document.getElementById("perisa").value,
