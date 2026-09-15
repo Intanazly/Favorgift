@@ -15,6 +15,9 @@ function addToCart(name, price, image){
             price:price,
             image:image,
             quantity:1
+        warna: document.getElementById("warna").value,
+        aroma: document.getElementById("aroma").value,
+        perisa: document.getElementById("perisa").value,
         });
     }
 
