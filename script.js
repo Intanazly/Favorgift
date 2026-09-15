@@ -50,6 +50,17 @@ function displayCart(){
     
     <h3>${item.name}</h3>
 
+    cartItems.innerHTML += `
+    <div class="cart-item">
+
+    <img src="${item.image}" class="cart-image">
+
+    <h3>${item.name}</h3>
+
+    <p>Warna: ${item.warna || "-"}</p>
+    <p>Aroma: ${item.aroma || "-"}</p>
+    <p>Perisa: ${item.perisa || "-"}</p>
+
     <p>RM${item.price.toFixed(2)}</p>
 
     <div class="qty-box">
