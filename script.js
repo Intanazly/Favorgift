@@ -1,4 +1,4 @@
-function addToCart(name, price, image){
+function addToCart(name, price, image, pilihan){
 
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -14,6 +14,7 @@ function addToCart(name, price, image){
         name:name,
         price:price,
         image:image,
+        pilihan:pilihan,
         quantity:1
     });
     }
@@ -46,10 +47,8 @@ function addToCart(name, price, image){
 
             <h3>${item.name}</h3>
 
-            <p>Warna: ${item.warna || "-"}</p>
-            <p>Aroma: ${item.aroma || "-"}</p>
-            <p>Perisa: ${item.perisa || "-"}</p>
-
+           <p>Pilihan: ${item.pilihan || "-"}</p>
+           
             <p>RM${item.price.toFixed(2)}</p>
 
             <div class="qty-box">
