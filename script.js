@@ -10,14 +10,11 @@ function addToCart(name, price, image){
 
     }else{
 
-    cart.push({
+  cart.push({
         name:name,
         price:price,
         image:image,
-        quantity:1,
-        warna: document.getElementById("warna")?.value || "-",
-        aroma: document.getElementById("aroma")?.value || "-",
-        perisa: document.getElementById("perisa")?.value || "-"
+        quantity:1
     });
     }
 
